@@ -14,12 +14,12 @@ getgenv().Nousigi = true
 local DisableAnimation = game.Players.LocalPlayer.PlayerGui:FindFirstChild('TouchGui')
 
 local T1UIColor = {
-    ["Border Color"] = Color3.fromRGB(170, 110, 3),
-    ["Click Effect Color"] = Color3.fromRGB(170, 110, 3),
-    ["Setting Icon Color"] = Color3.fromRGB(170, 110, 3),
+    ["Border Color"] = Color3.fromRGB(212, 175, 85),
+    ["Click Effect Color"] = Color3.fromRGB(212, 175, 85),
+    ["Setting Icon Color"] = Color3.fromRGB(212, 175, 85),
     ["Logo Image"] = "rbxassetid://5009915795",
-    ["Search Icon Color"] = Color3.fromRGB(139, 0, 0),
-    ["Search Icon Highlight Color"] = Color3.fromRGB(139, 0, 0),
+    ["Search Icon Color"] = Color3.fromRGB(230, 201, 120),
+    ["Search Icon Highlight Color"] = Color3.fromRGB(230, 201, 120),
     ["GUI Text Color"] = Color3.fromRGB(240, 240, 240),
     ["Text Color"] = Color3.fromRGB(240, 240, 240),
     ["Placeholder Text Color"] = Color3.fromRGB(100, 100, 100),
@@ -32,23 +32,23 @@ local T1UIColor = {
     ["Background 3 Color"] = Color3.fromRGB(25, 25, 25),
     ["Background Image"] = "",
     
-    ["Page Selected Color"] = Color3.fromRGB(139, 0, 0),
+    ["Page Selected Color"] = Color3.fromRGB(230, 201, 120),
     ["Section Text Color"] = Color3.fromRGB(255, 255, 255),
-    ["Section Underline Color"] = Color3.fromRGB(139, 0, 0),
-    ["Toggle Border Color"] = Color3.fromRGB(139, 0, 0),
-    ["Toggle Checked Color"] = Color3.fromRGB(139, 0, 0),
+    ["Section Underline Color"] = Color3.fromRGB(230, 201, 120),
+    ["Toggle Border Color"] = Color3.fromRGB(230, 201, 120),
+    ["Toggle Checked Color"] = Color3.fromRGB(230, 201, 120),
     ["Toggle Desc Color"] = Color3.fromRGB(180, 180, 180),
     
-    ["Button Color"] = Color3.fromRGB(170, 110, 3),
-    ["Label Color"] = Color3.fromRGB(170, 110, 3),
-    ["Dropdown Icon Color"] = Color3.fromRGB(170, 110, 3),
-    ["Dropdown Selected Color"] = Color3.fromRGB(170, 110, 3),
+    ["Button Color"] = Color3.fromRGB(212, 175, 85),
+    ["Label Color"] = Color3.fromRGB(212, 175, 85),
+    ["Dropdown Icon Color"] = Color3.fromRGB(212, 175, 85),
+    ["Dropdown Selected Color"] = Color3.fromRGB(212, 175, 85),
     ["Dropdown Selected Check Color"] = Color3.fromRGB(255, 255, 255),
     
-    ["Textbox Highlight Color"] = Color3.fromRGB(170, 110, 3),
-    ["Box Highlight Color"] = Color3.fromRGB(170, 110, 3),
-    ["Slider Line Color"] = Color3.fromRGB(170, 110, 3),
-    ["Slider Highlight Color"] = Color3.fromRGB(170, 110, 3),
+    ["Textbox Highlight Color"] = Color3.fromRGB(212, 175, 85),
+    ["Box Highlight Color"] = Color3.fromRGB(212, 175, 85),
+    ["Slider Line Color"] = Color3.fromRGB(212, 175, 85),
+    ["Slider Highlight Color"] = Color3.fromRGB(212, 175, 85),
     
     ["Tween Animation 1 Speed"] = DisableAnimation and 0 or 0.25,
     ["Tween Animation 2 Speed"] = DisableAnimation and 0 or 0.5,
@@ -1489,7 +1489,7 @@ function Library:CreateWindow(Setting)
 				check.Name = "check"
 				check.Parent = checkbox
 				check.AnchorPoint = Vector2.new(0.5, 0.5)
-				check.BackgroundColor3 = Color3.fromRGB(225, 210, 90)
+				check.BackgroundColor3 = Color3.fromRGB(212, 175, 85)
 				check.Position = UDim2.new(0.5, 0, 0.5, 0)
 				
 				if Desc and Desc ~= "" then
@@ -1707,7 +1707,7 @@ end)
 				ClickArea_1.Name = "ClickArea"
 				ClickArea_1.Parent = RowBG_1
 				ClickArea_1.AnchorPoint = Vector2.new(1, 0.5)
-				ClickArea_1.BackgroundColor3 = Color3.fromRGB(170, 110, 3)
+				ClickArea_1.BackgroundColor3 = Color3.fromRGB(212, 175, 85)
 				ClickArea_1.Position = UDim2.new(1, -8, 0.5, 0)
 				ClickArea_1.Size = UDim2.new(0, 94, 0, 30)
 				ClickArea_1.ClipsDescendants = true
@@ -1717,10 +1717,10 @@ end)
 				
 				UIGradient_1.Parent = ClickArea_1
 				UIGradient_1.Color = ColorSequence.new{
-					ColorSequenceKeypoint.new(0, Color3.fromRGB(170, 110, 3)),
-					ColorSequenceKeypoint.new(0.4, Color3.fromRGB(200, 150, 60)),
-					ColorSequenceKeypoint.new(0.6, Color3.fromRGB(78, 54, 41)),
-					ColorSequenceKeypoint.new(1, Color3.fromRGB(170, 110, 3))
+					ColorSequenceKeypoint.new(0, Color3.fromRGB(230, 201, 120)),
+					ColorSequenceKeypoint.new(0.4, Color3.fromRGB(212, 175, 85)),
+					ColorSequenceKeypoint.new(0.6, Color3.fromRGB(168, 132, 45)),
+					ColorSequenceKeypoint.new(1, Color3.fromRGB(212, 175, 85))
 				}
 				UIGradient_1.Rotation = 90
 				
